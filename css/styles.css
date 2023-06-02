@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing:border-box;
 }
-body{
+html{
     overflow-x: hidden;
 }
 
@@ -11,12 +11,17 @@ body{
 
 @font-face{
     font-family: 'nordique Pro bold';
-    src: url(/Nordique\ Pro\ Bold.otf) format('truetype');
+    src: url("../Nordique\ Pro\ Bold.otf") format('truetype');
 }
 
 @font-face{
     font-family: 'nordique Pro semibold';
-    src: url(/NordiquePro-Semibold.otf) format('truetype');
+    src: url("../NordiquePro-Semibold.otf") format('truetype');
+}
+
+@font-face{
+    font-family: 'nordique Pro regular';
+    src: url("../NordiquePro-Regular.otf") format('truetype');
 }
 
 .section2{
@@ -60,6 +65,33 @@ h2{
 
 }
 
+@media screen and (max-width: 768px){
+    
+    .section2{
+        background-image: url("../assets/img/fondoSec2Mob.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        height:80vh;
+    }
+    h2{
+        font-size: 3.1rem;
+        font-family: nordique Pro semibold;
+        text-align: center;
+        color: #202532;
+        padding-top: 3.5em;   
+    }
+
+    .exa1sec2{
+        display: none;
+    }
+    .section2 iframe{
+        width: 93%;
+        height: 13em;
+        margin-left: 0.8em;
+        margin-top:2em;
+    }
+
+}
 .section4{
     background: url(/assets/img/fondoSec4.svg);
     background-size:cover;
@@ -82,17 +114,20 @@ h2{
     position: absolute;
     z-index: 1;
 }
+.exasec4Mob{
+    display: none;
+}
 
 .lista1sec4 {
     display:flex;
-    
+    width:80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 6em;
+    margin-top: 11em;
+    gap:12em;
 }
 
-.lista1sec4 div{
-    width:20em;
-    margin-top: 11em;
-    margin-left:18em;
-}
 
 
 .lista1sec4 div h3{
@@ -102,11 +137,10 @@ h2{
 }
 
 .lista1sec4 div p{
-    font-size:2.7rem;
+    font-size:3.2rem;
     color:#202532;
     font-family: nordique Pro bold;
     width:8em;
-    margin-left:0em;
     margin-top: -0.4em; 
 }
 
@@ -122,14 +156,14 @@ h2{
 
 .lista2sec4 {
     display:flex;
-    
+    width:80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 6em;
+    gap:5.6em;
+    margin-top:8em;
 }
 
-.lista2sec4 div {
-    margin-top:8em;
-    width:20em;
-    margin-left:18em;
-}
 
 .lista2sec4 div h3{
     font-size:8rem;
@@ -139,12 +173,85 @@ h2{
 
 
 .lista2sec4 div p{
-    font-size:2.7rem;
+    font-size:3.2rem;
     color:#202532;
     font-family: nordique Pro bold;
     width:10em;
     margin-top:-0.5em;
 }
+
+@media screen and (max-width: 768px){
+    .section4{
+        background: url("../assets/img/fondoSec4Mob.svg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:100%;
+        height:auto;
+        padding-bottom:30em;
+    }
+    
+    .exa1sec4{
+        margin-left: 1em;
+        margin-bottom: -15em;
+        width:11em;
+    }
+    .exa2sec4{
+        display: none;
+    }
+    .exasec4Mob{
+        display: block;
+        margin-left: 2.6em;
+        margin-top: 3em;
+        width: 15em;
+    }
+    
+    .lista1sec4{
+        flex-direction: column;
+        margin-left: -3em;
+        margin-top: -11em;
+        gap:5em;
+    }
+    .lista2sec4{
+        flex-direction: column;
+        margin-left: -3em;
+        margin-top: 5em;
+        gap:5em;
+    }
+
+    .lista1sec4 div h3{
+        font-size:5.5rem;
+    }
+    
+    .lista1sec4 div p{
+        font-size:2.2rem;
+    }
+
+    .margenListaMob{
+        margin-left:2em;
+    }
+
+
+    .lista2sec4 div h3{
+        font-size:5.5rem;
+    }
+    
+    
+    .lista2sec4 div p{
+        font-size:2.2rem;
+        color:#202532;
+        font-family: nordique Pro bold;
+        width:10em;
+        margin-top:-0.5em;
+    }
+    .teams{
+        margin-left: 0em;
+        
+    }
+    .fourth{
+        padding-left:0em;
+    }
+}
+
 
 .section6{
     background: url(../assets/img/fondoSec6.png);
@@ -194,13 +301,47 @@ h2{
 
 }
 
+@media screen and (max-width: 768px){
+    .section6{
+        background: url(../assets/img/fondoSec6Mob.svg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:101%;
+        height:120vh;
+        padding-bottom:0px;
+    }
+    
+    .imgsec6 img {
+        width: 85%;
+        margin-top: -25em;
+    }
+    .section6 p{
+        font-family: nordique Pro regular;
+        letter-spacing: 1.2px;
+        line-height: 24px;
+        width:80%;
+        font-size: 1.01rem;
+        margin-left: 2.2em;
+        margin-top: -7em;
+        margin-bottom: 7em;
+    }
+
+    .button{
+        background: #33B3E6;
+        margin-top:-4em;
+        border-radius: 50px;
+        padding: 2em 7.5em;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+    }
+}
+
 .section8{
     background: url(/assets/img/fondoSec8.png);
     background-size:cover;
     background-repeat:no-repeat;
     width:100%;
     height:auto;
-    padding-bottom:350px;
 }
 
 .mainSec8{
@@ -210,10 +351,12 @@ h2{
     margin-top: 25em;
 }
 
-.imgSec8 img{
+.imgSec8Esc{
     width: 100em;
 }
-
+.imgSec8Mob{
+    display: none;
+}
 .exa1Sec8{
     margin-left: 75em;
     margin-bottom:-20em
@@ -221,7 +364,7 @@ h2{
 
 .textSec8{
     width:60em;
-    margin-top:28em;
+    margin-top:26em;
     margin-left:-22em;
     margin-right: 8em;
 }
@@ -243,9 +386,133 @@ h2{
 .pSec8{
     font-family: nordique Pro bold;
     font-size: 1rem;
-    color:white;
+    color: #DBDBE3;
     margin-top:1.5em;
     letter-spacing: 1.5px;
     line-height: 25px;
     margin-bottom:6.9em;
+}
+.button2{
+    background: #33B3E6;
+    border-radius: 50px;
+    padding: 2.2em 11em;
+    font-family: nordique Pro semibold;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.lineSec8{
+    margin-top:11em;
+    margin-left: 3.5em;
+    height: 1px;
+}
+
+.lineSec8 img{
+    width: 110em;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .section8{
+        background: url("../assets/img/fondoSec8.png");
+        width: 100%;
+    }
+    .mainSec8{
+        flex-direction: column-reverse;
+    }
+       
+    .exa1Sec8{
+        margin-left: 11em;
+        margin-bottom:0;
+        margin-top: -10em;
+        width:14em;
+    }
+
+    .textSec8{
+        width:100%;
+    }
+    
+    .h1Sec8{
+        font-size: 4rem;
+        margin-left: 6.2em;
+        margin-top: -6em;
+        white-space: nowrap;
+    }
+    
+    .h2Sec8{
+        font-size: 2.3rem;
+        line-height: 56px;
+        width: 80%;
+        margin-top:-3em;
+        margin-left: 10.8em;
+        text-align: left;
+    }
+    
+    .pSec8{
+        font-size: 1rem;
+        color:white;
+        margin-top:1.5em;
+        margin-left: 25em;
+        padding-right:0.3em;
+        width:80%;
+        letter-spacing: 1.5px;
+        line-height: 25px;
+        margin-bottom:6.9em;
+    }
+
+    .button2{
+        margin-top:-4em;
+        border-radius: 50px;
+        padding: 2em 7.5em;
+        letter-spacing: 1px;
+        margin-right: -24em;
+        font-size: 0.9rem;
+        margin-left: 25em;
+    }
+
+    .imgSec8{
+    width:100%;
+    }
+    .imgSec8Esc{
+        display: none;
+    }
+    .imgSec8Mob{
+        display: block;
+        margin-top:-22em;
+        width:100%;
+    }
+    .lineSec8{
+        display: none;
+    }
+}
+footer{
+    background-color: #3E426D;;
+}
+
+.logo{
+    margin-left:7em;
+    margin-top:2.7em;
+}
+
+.redes{
+    display:flex;
+    margin-left: 7em;
+    margin-top:1.5em;
+    gap:3.8em;
+    padding-bottom: 15em;
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        margin-left: 6em;
+    }
+    .redes{
+        margin-left: 3.4em;
+        gap:2em;
+        padding-bottom: 10em;
+    }
 }
